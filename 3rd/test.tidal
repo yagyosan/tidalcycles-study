@@ -1,0 +1,9 @@
+do
+  d1
+    $ stack [
+      s "drum [cp hh] odx*2 arpy*2" # n "[1 3 5 0 2]/2"
+      -- slow 2 $ s "drum:1 [cp:1 hh:1] [odx:3 odx:3] [arpy:3 arpy:5] drum:5 [cp:0 hh:0] [odx:0 odx:2] [arpy:2 arpy:2]"
+      -- s "numbers [numbers numbers] numbers*2 numbers*2" # n "[1 3 5 0 2]/2"
+    ]
+
+hush
