@@ -1,3 +1,7 @@
+-- https://tidalcycles.org/index.php/Oscillators#cosine
+-- https://tidalcycles.org/index.php/rand
+-- https://tidalcycles.org/index.php/choose
+
 do
   d1
     $ stack [
@@ -10,7 +14,7 @@ do
       -- sound "bd*8" # pan (slow 2 rand)
       -- sound "bd*8" # pan (slow 2 (irand 2))
       -- sound "bd*8" # pan (slow 2 (choose [0, 0.5, 1, 1.5]))
-      -- sound "bd*8" # pan (slow 2 (chooseBy "0 0.25 0.5 0.75" [0, 0.5, 1, 1.5]))
+      -- sound "bd*8" # pan (slow 2 (chooseBy "0.25 0.75" [0, 1]))
     ]
 
 hush

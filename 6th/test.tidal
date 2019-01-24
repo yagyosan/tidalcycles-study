@@ -1,0 +1,10 @@
+-- https://tidalcycles.org/index.php/Category:Higher-order_functions
+
+do
+  d1
+    $ stack [
+      -- every 3 (fast 2) $ n "0 1 [~ 2] 3" # sound "arpy"
+      every' 3 1 (fast 2) $ n "0 1 [~ 2] 3" # sound "arpy"
+    ]
+
+hush
