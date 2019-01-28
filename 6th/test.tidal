@@ -3,8 +3,8 @@
 do
   d1
     $ stack [
-      -- somtimes
-      -- always (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy" 
+      -- sometimes
+      -- always (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- almostAlways (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- often (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- sometimes (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
@@ -21,8 +21,36 @@ do
       -- jux and asymmetric play
       -- jux ((# speed "0.5") . rev) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- juxBy 0.5 ((# speed "0.5") . rev) $ n "0 1 2 3 4 5 6" # sound "arpy"
-      -- superimpose (fast 1) $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- superimpose (fast 2) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- off 0.5 (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- somecycles
+      -- someCycles (fast 2) $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- someCyclesBy 0.5 (fast 2) $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- spread
+      -- spread ($) [density 2, rev, slow 2, striate 3, (# speed "0.8")] $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- fastspread ($) [density 2, rev, slow 2, striate 3, (# speed "0.8")] $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- spreadChoose ($) [density 2, rev, slow 2, striate 3, (# speed "0.8")] $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- ur -> another dir
+      -- waeve
+      -- weave 16 (pan sine)
+      --   [n "0 1 2 3 4 5 6" # sound "arpy",
+      --   n "0 1 2 3 4 5 6" # sound "superpiano",
+      --   n "0 1 2 3 4 5 6" # sound "supersaw"
+      --   ]
+      -- weaveWith 4 (n "0 1 2 3 4 5 6" # sound "arpy")
+      --   [fast 2,
+      --   (# speed "0.5"),
+      --   chop 16
+      --   ]
+      -- whenmod
+      -- whenmod 8 4 (fast 2) (n "0 1 2 3 4 5 6" # sound "arpy")
+      -- within
+      -- within (0, 0.5) (fast 2) $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- ifp (i didn't understand)
+      -- ifp ((== 1).(flip mod 2))
+      --   (striate 4)
+      --   (# crush "24 48") $
+      --   n "0 1 2 3 4 5 6" # sound "arpy"
     ]
 
 hush
