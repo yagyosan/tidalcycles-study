@@ -5,6 +5,7 @@ do
     $ stack [
       -- cat [sound "bd*2 sn", sound "jvbass*3", sound "drum*2", sound "ht mt"],
       fastcat [sound "bd*2 sn", sound "jvbass*3", sound "drum*2", sound "ht mt"]
+      -- randcat [sound "bd*2 sn", sound "jvbass*3", sound "drum*2", sound "ht mt"]
     ]
 
 hush

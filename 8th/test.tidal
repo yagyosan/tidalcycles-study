@@ -1,24 +1,9 @@
--- https://tidalcycles.org/index.php/ur
-
-let pats =
-      [
-        ("a", stack [n "0 1 2 3 4 5 6" # sound "superpiano",
-                     n "[c3,g4,c4]" # s "superpiano"
-                    ]
-        ),
-        ("b", stack [n "0 1 2 3 4 5 6" # sound "superpiano",
-                     n "[d3,a4,d4]" # s "superpiano"
-                    ]
-        ),
-        ("c", stack [n "0 1 2 3 4 5 6" # sound "superpiano",
-                     n "[f4,c5,f4]" # s "superpiano"
-                    ]
-        )
-      ]
-    fx = [("reverb", (# (room 0.8 # sz 0.99 # orbit 1))),
-          ("faster", fast 2)
-         ]
-in
-d1 $ ur 12 "a b:reverb c:faster" pats fx
+do
+  d1
+    $ stack [
+      -- gap 3 $ n "0 1 2 3 4 5 6" # sound "superpiano"
+      -- chop 3 $ n "0 1 2 3 4 5 6" # sound "superpiano"
+      -- striate 3 $ n "0 1 2 3 4 5 6" # sound "superpiano"
+    ]
 
 hush

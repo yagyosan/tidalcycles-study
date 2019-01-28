@@ -12,6 +12,9 @@ do
       -- almostNever (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- never (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- sometimesBy 0.5 (# crush 3) $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- degrade
+      -- degrade $ n "0 1 2 3 4 5 6" # sound "arpy"
+      -- degradeBy 0.5$ n "0 1 2 3 4 5 6" # sound "arpy"
       -- every
       -- every 3 (fast 2) $ n "0 1 2 3 4 5 6" # sound "arpy"
       -- every' 3 1 (fast 2) $ n "0 1 2 3 4 5 6" # sound "arpy"
@@ -51,6 +54,8 @@ do
       --   (striate 4)
       --   (# crush "24 48") $
       --   n "0 1 2 3 4 5 6" # sound "arpy"
+      -- randslice
+      -- randslice 8 $ sound "bev"
     ]
 
 hush
