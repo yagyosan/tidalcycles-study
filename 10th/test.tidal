@@ -1,0 +1,11 @@
+-- can use orbit room and delay
+
+d1 $ sound "feel*4" # room 0.9 # sz 0.9
+
+d2 $ sound "bd*16" # room 0
+
+d1 $ sound "feel*4" # room 0.9 # sz 0.9 # orbit 1
+
+d2 $ sound "bd*16" # room 0 # orbit 1
+
+hush
